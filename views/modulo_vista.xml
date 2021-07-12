@@ -44,7 +44,7 @@
 
     <record id="view_modulo_tree" model="ir.ui.view">
         <field name="name">nombre.modulo.tree</field>
-        <field name="model">hnombre.modulo</field>
+        <field name="model">nombre.modulo</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="cadena_texto"/>
