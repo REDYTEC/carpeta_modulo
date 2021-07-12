@@ -55,8 +55,8 @@
             <tree>
                 <field name="name"/>
                 <field name="cadena_texto"/>
-                <field name="numero_entero"/>
-                <field name="numero_puntos_decimales"/>
+                <field name="numero_entero" optional="hide"/>
+                <field name="numero_puntos_decimales" optional="show"/>
                 <field name="variable_boleana"/>
                 <field name="texto_largo"/>
                 <field name="seleccion"/>
