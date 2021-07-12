@@ -9,10 +9,10 @@ class NombreClase(models.Model):
 
     cadena_texto = fields.Char(string='Nombre Visible en Menú')
     numero_entero = fields.Integer(string='Nombre Visible en Menú')
-    numero_puntos_decimales = field.Float(string='Nombre Visible en Menú')
-    variable_boleana = field.Boolean(strin='Nombre Visible en Menú')
-    texto_largo = field.Text(string='Nombre Visible en Menú')
-    seleccion = field.Selection([
+    numero_puntos_decimales = fields.Float(string='Nombre Visible en Menú')
+    variable_boleana = fields.Boolean(strin='Nombre Visible en Menú')
+    texto_largo = fields.Text(string='Nombre Visible en Menú')
+    seleccion = fields.Selection([
         ('campo_1', 'Nombre en Menú 1'),
         ('campo_2', 'Nombre en Menú 2'),
     ])
