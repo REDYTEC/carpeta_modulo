@@ -14,6 +14,7 @@
         # Aquí se mandan llamar todos los archivos .xml y .csv, primero se escribe la carpeta
         # en la que están y luego el nombre completo del archivo
         'security/ir.model.access.csv',
+        'data/data.xml',
         'views/modulo_vista.xml'
     ],
     'demo': [],
