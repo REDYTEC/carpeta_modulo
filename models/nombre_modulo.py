@@ -13,6 +13,9 @@ class NombreClase(models.Model):
     numero_entero = fields.Integer(string='Número Entero', readonly=True, default=8)
     numero_puntos_decimales = fields.Float(string='Número Decimal')
     variable_boleana = fields.Boolean(strin='Variable Boleana')
+    uno = fields.Boolean(strin='Este Mejor')
+    dos = fields.Boolean(strin='Mejor Este')
+    notas = fields.Text(string='Notas Extra')
     texto_largo = fields.Text(string='Texto Largo / Notas')
     seleccion = fields.Selection([
         ('campo_1', 'Selección 1'),
