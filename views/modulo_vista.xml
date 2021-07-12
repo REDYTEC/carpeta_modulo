@@ -101,7 +101,7 @@
               parent="menu_1"/>
 
     <menuitem id="menu_1_1_1"
-              name="Nombre 1.1"
+              name="Nombre 1.1.1"
               parent="menu_1_1"
               action="action_nombre_modulo"/>
 
