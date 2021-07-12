@@ -49,7 +49,7 @@
             <tree>
                 <field name="cadena_texto"/>
                 <field name="numero_entero"/>
-                <field name="numero_punto_decimal"/>
+                <field name="numero_puntos_decimales"/>
                 <field name="variable_boleana"/>
                 <field name="texto_largo"/>
                 <field name="seleccion"/>
@@ -67,7 +67,7 @@
                         <group name="group_left">
                             <field name="cadena_texto"/>
                             <field name="numero_entero"/>
-                            <field name="numero_punto_decimal"/>
+                            <field name="numero_puntos_decimales"/>
                             <field name="variable_boleana"/>
                         </group>
                         <group name="group_left">
@@ -103,6 +103,6 @@
     <menuitem id="menu_1.1.1"
               name="Nombre 1.1"
               parent="menu_1.1"
-              action="action_nomre_modulo"/>
+              action="action_nombre_modulo"/>
 
 </odoo>
