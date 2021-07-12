@@ -7,6 +7,8 @@ class NombreClase(models.Model):
     _name = "nombre.modulo"
     _description = "Nombre Modulo"
 
+    name = fields.Char(string='Secuencia', copy=False, readonly=True, required=True,
+                       default=lambda self: _('New'))
     cadena_texto = fields.Char(string='Cadena de Texto')
     numero_entero = fields.Integer(string='Número Entero')
     numero_puntos_decimales = fields.Float(string='Número Decimal')
@@ -18,3 +20,9 @@ class NombreClase(models.Model):
     ])
     fecha = fields.Date(string='Fecha')
     fecha_y_hora = fields.Datetime(string='Fecha Y Hora')
+
+    @api.model
+    def create(self, vals):
+        if vals.get('name', _('New')) == _('New'):
+            vals['name'] = self.env['ir.sequence'].next_by_code('nombre.modulo') or _('New')
+        return super(NombreClase, self).create(vals)

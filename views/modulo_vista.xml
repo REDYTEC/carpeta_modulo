@@ -18,6 +18,12 @@
                             <div class="oe_kanban_details">
                                 <ul>
                                     <li>
+                                        <strong>
+                                            ID:
+                                            <field name="name"/>
+                                        </strong>
+                                    </li>
+                                    <li>
                                         Cadena de Texto:
                                         <field name="cadena_texto"/>
                                     </li>
@@ -47,6 +53,7 @@
         <field name="model">nombre.modulo</field>
         <field name="arch" type="xml">
             <tree>
+                <field name="name"/>
                 <field name="cadena_texto"/>
                 <field name="numero_entero"/>
                 <field name="numero_puntos_decimales"/>
@@ -63,6 +70,11 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+                    <div class="oe_tittle">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
                     <group>
                         <group name="group_left">
                             <field name="cadena_texto"/>
