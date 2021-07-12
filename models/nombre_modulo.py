@@ -10,14 +10,15 @@ class NombreClase(models.Model):
     name = fields.Char(string='Secuencia', copy=False, readonly=True, required=True,
                        default=lambda self: _('New'))
     cadena_texto = fields.Char(string='Cadena de Texto', required=True)
-    numero_entero = fields.Integer(string='Número Entero', readonly=True)
+    numero_entero = fields.Integer(string='Número Entero', readonly=True, default=8)
     numero_puntos_decimales = fields.Float(string='Número Decimal')
     variable_boleana = fields.Boolean(strin='Variable Boleana')
     texto_largo = fields.Text(string='Texto Largo / Notas')
     seleccion = fields.Selection([
         ('campo_1', 'Selección 1'),
         ('campo_2', 'Selección 2'),
-    ], required=True)
+        ('campo_default', 'Default'),
+    ], required=True, default='campo_default')
     fecha = fields.Date(string='Fecha')
     fecha_y_hora = fields.Datetime(string='Fecha Y Hora')
 
