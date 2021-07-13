@@ -113,6 +113,9 @@
                                     <field name="fecha"/>
                                     <field name="fecha_y_hora"/>
                                 </group>
+                                <group string="Aqui Andamos Como Ño">
+
+                                </group>
                             </group>
                         </page>
                     </notebook>
