@@ -107,10 +107,10 @@
                             </group>
                         </page>
                         <page string="Extra Info" name="extra_info">
-                            <group>
+                            <group string="Notas">
                                 <field name="notas"/>
                             </group>
-                            <group>
+                            <group string="Fecha">
                                 <field name="fecha"/>
                                 <field name="fecha_y_hora"/>
                             </group>
