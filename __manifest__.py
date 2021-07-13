@@ -7,15 +7,15 @@
     'description': """Descripción larga con más detalles del funcionamiento del módulo""",
     'website': 'redytec.com',
     'depends': [
-         # solo si se planea heredar módulos, sino los paréntesis se quedan vacíos, si son más
-         # de uno, se separan con comas
+        'purchase',
     ],
     'data': [
         # Aquí se mandan llamar todos los archivos .xml y .csv, primero se escribe la carpeta
         # en la que están y luego el nombre completo del archivo
         'security/ir.model.access.csv',
         'data/data.xml',
-        'views/modulo_vista.xml'
+        'views/modulo_vista.xml',
+        'views/purchase_order_herencia_vista.xml',
     ],
     'demo': [],
     'qweb': [],
