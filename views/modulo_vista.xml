@@ -109,10 +109,10 @@
                         <page string="Extra Info" name="extra_info">
                             <group string="Notas">
                                 <field name="notas"/>
-                            </group>
-                            <group string="Fecha">
-                                <field name="fecha"/>
-                                <field name="fecha_y_hora"/>
+                                <group string="Fecha">
+                                    <field name="fecha"/>
+                                    <field name="fecha_y_hora"/>
+                                </group>
                             </group>
                         </page>
                     </notebook>
