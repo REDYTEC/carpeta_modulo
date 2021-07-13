@@ -114,18 +114,18 @@
                                     <field name="fecha_y_hora"/>
                                 </group>
                                 <group string="Estado">
-                                    <span t-if="'state', '=', 'draft']">
+                                    <span t-if="'state', '=', 'draft'">
                                         <strong>Documento Borrador</strong>
                                     </span>
-<!--                                    <span t-if="doc.state in ['confirm']">-->
-<!--                                        <strong>Documento Confirmado</strong>-->
-<!--                                    </span>-->
-<!--                                    <span t-if="doc.state in ['done']">-->
-<!--                                        <strong>Documento Finalizado</strong>-->
-<!--                                    </span>-->
-<!--                                    <span t-if="doc.state in ['cancel']">-->
-<!--                                        <strong>Documento Cancelado</strong>-->
-<!--                                    </span>-->
+                                    <span t-if="'state', '=', 'confirm'">
+                                        <strong>Documento Confirmado</strong>
+                                    </span>
+                                    <span t-if="'state', '=', 'done'">
+                                        <strong>Documento Finalizado</strong>
+                                    </span>
+                                    <span t-if="'state', '=', 'cancel'">
+                                        <strong>Documento Cancelado</strong>
+                                    </span>
                                 </group>
                             </group>
                         </page>
