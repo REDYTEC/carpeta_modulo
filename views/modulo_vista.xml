@@ -90,8 +90,8 @@
                     <notebook>
                         <page string="Uno U Otro" name="one_or_the_other">
                             <group>
-                                <field name="uno"/>
-                                <field name="dos"/>
+                                <field name="uno" attrs="{'invisible': [('dos','=',True)]}"/>
+                                <field name="dos" attrs="{'invisible': [('uno','=',True)]}"/>
                             </group>
                         </page>
                         <page string="Extra Info" name="extra_info">
