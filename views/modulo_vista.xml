@@ -109,6 +109,8 @@
                         <page string="Extra Info" name="extra_info">
                             <group>
                                 <field name="notas"/>
+                            </group>
+                            <group>
                                 <field name="fecha"/>
                                 <field name="fecha_y_hora"/>
                             </group>
