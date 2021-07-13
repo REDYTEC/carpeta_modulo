@@ -70,14 +70,15 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <button id="button_confirm" name="action_confirm" string="Confirmar" class="btn-primary"
+                    <button id="button_confirm" name="action_confirm" string="Confirm" class="btn-primary"
+                            states="draft" type="object"/>
+                    <button id="button_done" name="action_done" string="Mark As Done" class="btn-primary"
+                            states="confirm" type="object"/>
+                    <button id="button_draft" name="action_draft" string="Sent to Draft" class="btn-primary"
+                            states="cancel" type="object"/>
+                    <button id="button_cancel" name="action_cancel" string="Cancel" states="draft,done,confirm"
                             type="object"/>
-                    <button id="button_done" name="action_done" string="Marcar Hecho" class="btn-primary"
-                            type="object"/>
-                    <button id="button_draft" name="action_draft" string="Hacer Borrador" class="btn-primary"
-                            type="object"/>
-                    <button id="button_cancel" name="action_cancel" string="Cancelar" type="object"/>
-                    <field name="state" widget="statusbar"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done,confirm"/>
                 </header>
                 <sheet>
                     <div class="oe_tittle">
