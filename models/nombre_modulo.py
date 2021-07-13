@@ -29,6 +29,18 @@ class NombreClase(models.Model):
                               ('done', 'Hecho'), ('cancel', 'Cancelado')], default='draft',
                              string='Status')
 
+    def action_confirm(self):
+        self.state = 'confirm'
+
+    def action_done(self):
+        self.state = 'done'
+
+    def action_draft(self):
+        self.state = 'draft'
+
+    def action_cancel(self):
+        self.state = 'cancel'
+
     @api.model
     def create(self, vals):
         if vals.get('name', _('New')) == _('New'):
