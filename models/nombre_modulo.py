@@ -25,9 +25,9 @@ class NombreClase(models.Model):
     ], required=True, default='campo_default')
     fecha = fields.Date(string='Fecha')
     fecha_y_hora = fields.Datetime(string='Fecha Y Hora')
-    state = fields.Selection([('draft', 'Draft'), ('confirm', 'Confirmed'),
-                              ('done', 'Done'), ('cancel', 'Cancelled')], default='draft',
-                             string='Status', translate=True)
+    state = fields.Selection([('draft', 'Borrador'), ('confirm', 'Confirmado'),
+                              ('done', 'Hecho'), ('cancel', 'Cancelado')], default='draft',
+                             string='Status')
 
     @api.model
     def create(self, vals):
