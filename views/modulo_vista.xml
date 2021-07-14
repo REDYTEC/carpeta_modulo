@@ -5,7 +5,7 @@
         <field name="name">nombre.modulo.kanban</field>
         <field name="model">nombre.modulo</field>
         <field name="arch" type="xml">
-            <kanban default_order="id asc">
+            <kanban  sample="1">
                 <field name="cadena_texto"/>
                 <field name="numero_entero"/>
                 <field name="numero_puntos_decimales"/>
@@ -16,7 +16,7 @@
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_global_click">
                              <div class="o_kanban_image">
-                                <img t-att-src="kanban_image('nombre.modulo', 'imagex', record.id.raw_value)" alt="Product" class="o_image_64_contain"/>
+                                <img t-att-src="kanban_image('nombre.modulo', 'imagex', record.id.raw_value)" class="o_image_64_contain"/>
                              </div>
                             <div class="oe_kanban_details">
                                 <ul>
