@@ -82,6 +82,7 @@
                     <field name="state" widget="statusbar" statusbar_visible="draft,done,confirm"/>
                 </header>
                 <sheet>
+                    <field name="image" widget="image" class="oe_avatar"/>
                     <div class="oe_tittle">
                         <h1>
                             <field name="name" readonly="1"/>
