@@ -28,7 +28,7 @@ class NombreClase(models.Model):
     state = fields.Selection([('draft', 'Borrador'), ('confirm', 'Confirmado'),
                               ('done', 'Hecho'), ('cancel', 'Cancelado')], default='draft',
                              string='Status')
-    image = fields.Binary(string='Doctor Image')
+    imagex = fields.Binary(string='Doctor Image')
 
     def action_confirm(self):
         self.state = 'confirm'
