@@ -89,13 +89,13 @@
                         </h1>
                     </div>
                     <group>
-                        <group name="group_left">
+                        <group>
                             <field name="cadena_texto"/>
                             <field name="numero_entero"/>
                             <field name="numero_puntos_decimales"/>
                             <field name="variable_boleana"/>
                         </group>
-                        <group name="group_left">
+                        <group>
                             <field name="texto_largo"/>
                             <field name="seleccion"/>
                         </group>
