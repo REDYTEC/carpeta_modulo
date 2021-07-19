@@ -6,7 +6,7 @@ from odoo import api, fields, models, _, tools
 class NombreClase(models.Model):
     _name = "nombre.modulo"
     _description = "Nombre Modulo"
-    # _rec_name = "cadena_texto"
+    _rec_name = "cadena_texto"
 
     name = fields.Char(string='Secuencia', copy=False, readonly=True, required=True,
                        default=lambda self: _('New'))

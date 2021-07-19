@@ -15,6 +15,7 @@
         'security/ir.model.access.csv',
         'data/data.xml',
         'wizard/crear_wizard_view.xml',
+        'wizard/buscar_wizard_view.xml',
         'views/modulo_vista.xml',
         'views/purchase_order_herencia_vista.xml',
     ],
