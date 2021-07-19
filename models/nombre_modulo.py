@@ -30,6 +30,8 @@ class NombreClase(models.Model):
                              string='Status')
     imagex = fields.Binary(string='Imagen')
 
+    color = fields.Char(string='Color')
+
     def action_confirm(self):
         self.state = 'confirm'
 

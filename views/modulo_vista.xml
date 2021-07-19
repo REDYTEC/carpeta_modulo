@@ -115,7 +115,7 @@
                                     <field name="fecha_y_hora"/>
                                 </group>
                                 <group string="Estado">
-
+                                    <field name="color" widget="color"/>
                                 </group>
                             </group>
                         </page>
