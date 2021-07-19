@@ -1,4 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_nombre_modulo,access.nombre.modulo,model_nombre_modulo,,1,1,1,1
 access_crear_wizard,access.crear.wizard,model_crear_wizard,,1,1,1,1
-access_buscar_wizard,access.buscar.wizard,model_buscar_wizard,,1,1,1,1

@@ -159,9 +159,4 @@
               parent="wizard"
               action="action_create"/>
 
-    <menuitem id="wizard_search"
-              name="Wizard Buscar"
-              parent="wizard"
-              action="action_buscar"/>
-
 </odoo>
