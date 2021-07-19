@@ -14,6 +14,7 @@
         # en la que están y luego el nombre completo del archivo
         'security/ir.model.access.csv',
         'data/data.xml',
+        'wizard/crear_wizard_view.xml',
         'views/modulo_vista.xml',
         'views/purchase_order_herencia_vista.xml',
     ],

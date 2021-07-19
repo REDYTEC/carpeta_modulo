@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="view_wizard_form" model="ir.ui.view">
+        <field name="name">crear.wizard.form</field>
+        <field name="model">crear.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Crear Nuevo">
+                <group>
+                    <field name="cadena_texto"/>
+                    <field name="numero_puntos_decimales"/>
+                    <field name="seleccion"/>
+                </group>
+                <footer>
+                    <button name="action_create" type="object" string="Crear" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_create" model="ir.actions.act_window">
+        <field name="name">Create Wizard</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">crear.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_create_appointment_form"/>
+        <field name="target">new</field>
+    </record>
+
+</odoo>
