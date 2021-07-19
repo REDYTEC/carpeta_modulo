@@ -150,4 +150,13 @@
               parent="menu_1_1"
               action="action_nombre_modulo"/>
 
+    <menuitem id="wizard"
+              name="Wizard"
+              parent="menu_1"/>
+
+    <menuitem id="wizard_create"
+              name="Wizard Crear"
+              parent="wizard"
+              action="action_create"/>
+
 </odoo>
